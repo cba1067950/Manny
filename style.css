@@ -1,0 +1,70 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body,
+header,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+#navbar {
+  position: fixed;
+  background-color: rgb(34, 34, 34);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar li a {
+  color: white;
+  padding: 5px;
+}
+
+#navbar li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+ul {
+  padding: 20px;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+video {
+  align-content: left;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: inherit;
+}
+
+.home {
+  background-color: yellow;
+}
+
+.contact {
+  background-color: green;
+}
+
+.estimates {
+  background-color: blueviolet;
+}
+
+.testimonials {
+  background-color: red;
+}
