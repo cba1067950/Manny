@@ -1,4 +1,55 @@
+/* colors 
+yellow #BDB964
+light cherry #7C1C23
+dark cherry #3D1322
+dark blue #317380
+light blue #8FC4C6
+off white #E2D8CE
+
+blue
+#668894
+blackish
+#201724
+dark purple
+#3D2340
+pinkish
+#885570
+pink white
+#B1A2A1
+off white 
+#C1CBC0
+*/
+
+/* ****************** */
+/* GLOBAL */
+/* ****************** */
+#Home {
+  background-color: #201724;
+}
+
+#Contact {
+  background-color: #C1CBC0;
+}
+
+#Estimate {
+  background-color: #3D1322;
+}
+
+#inputBox{
+  background-color: #3D1322;
+}
+
+#outputBox{
+  background-color: #3D1322;
+}
+
+#Testimonials {
+  background-color: #C1CBC0;
+}
+
+
 html {
+  /* scroll-behavior: smooth; */
   overflow: hidden;
   height: 100%;
 }
@@ -10,29 +61,32 @@ ul {
   margin: 0px;
 }
 
+h1 {
+  padding: 5px;
+  margin: 0px;
+  font-size: 30pt;
+}
+
+h2{
+  font-size: 30pt;
+}
+
 body {
   height: 100%;
   overflow: auto;
 }
 
+/* ****************** */
+/* Nav bar */
+/* ****************** */
+
 #navbar {
   position: fixed;
-  background-color: rgb(34, 34, 34);
+  background-color: #201724;
   padding: 0px;
   margin: 0px;
   width: 100%;
   z-index: 1;
-}
-
-#navbar li a {
-  color: white;
-  padding: 5px;
-}
-
-#navbar li a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
 }
 
 ul {
@@ -45,6 +99,25 @@ li {
   text-decoration: none;
 }
 
+#HomeAnchor, #ContactAnchor, #EstimateAnchor, #TestimonialsAnchor {
+  position: absolute;
+  top: -56px;
+}
+
+/* ****************** */
+/* Body */
+/* ****************** */
+
+#Home, #Contact, #Estimate, #Testimonials {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+/* ****************** */
+/* Home */
+/* ****************** */
+
 video {
   align-content: left;
   margin: 0px;
@@ -53,18 +126,125 @@ video {
   height: inherit;
 }
 
-.home {
-  background-color: yellow;
+/* ****************** */
+/* Contact */
+/* ****************** */
+
+#contactInfo {
+  float: left;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
 }
 
-.contact {
-  background-color: green;
+.contactBox {
+  width: 25%;
+  height: 120px;
+  /* margin: 10px; */
+  background: white;
+  border-radius: 15px;
 }
 
-.estimates {
-  background-color: blueviolet;
+span {
+  display: inline-block;
 }
 
-.testimonials {
-  background-color: red;
+#request {
+  display: block;
+  float: right;
+  text-align: center;
+  width: 50%;
+  height: inherit;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background: #f0e68c;
+}
+
+form {
+  text-align: center; 
+  width: 55vw;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(6deg);
+  }
+  50%{
+    transform: rotate(-6deg);
+  }
+  80%{
+    transform: rotate(0deg);
+  }
+}
+
+button {
+  width: 90px;
+  padding: 2px; 
+  font-size: 12px;
+  color: #aec6cf;
+  background: none; 
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+button:hover{ 
+  color:  #201724;
+  background:#aec6cf; 
+  transform: scale(1.2)
+}
+
+button:focus{
+  outline: none;
+  color:  #201724;
+  background:#aec6cf; 
+  animation: pulse 3s infinite;
+}
+
+button:active{
+  color:  #201724;
+  background:#aec6cf; 
+  transform: scale(1.2)
+}
+
+
+/* ****************** */
+/* Estimate */
+/* ****************** */
+
+/* This is the slider */
+input, label {
+  width: 60%; 
+  display: block;
+  /* justify-content: center; */
+}
+
+#inputBox {
+  float: left;
+  height: inherit;
+  width: 50%;
+}
+
+#outputBox {
+  float: right;
+  height: inherit;
+  text-align: center;
+  width: 50%;
+}
+
+#areaOutput {
+  font-size: 30px;
+  padding: 20px;
+}
+
+#areaBox {
+  border: solid 2px black;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
 }
