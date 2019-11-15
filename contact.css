@@ -1,0 +1,15 @@
+#contact-form-container {
+  /* display: block; */
+  /* float: right; */
+  /* text-align: center; */
+  /* width: 50%; */
+  /* height: inherit; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* background: #f0e68c; */
+}
+
+form {
+  text-align: center; 
+  width: 55vw;
+}

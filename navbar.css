@@ -1,0 +1,69 @@
+#Navbar {
+  position: fixed;
+  background-color: #201724;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#Navbar > ul {
+  padding: 20px;
+}
+
+ul > li {
+  display: inline;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+#HomeAnchor, #ContactAnchor, #EstimateAnchor, #TestimonialsAnchor {
+  position: absolute;
+  top: -56px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(6deg);
+  }
+  50%{
+    transform: rotate(-6deg);
+  }
+  80%{
+    transform: rotate(0deg);
+  }
+}
+
+li > button {
+  width: 90px;
+  padding: 2px; 
+  font-size: 12px;
+  color: #aec6cf;
+  background: none; 
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+li > button:hover{ 
+  color:  #201724;
+  background:#aec6cf; 
+  transform: scale(1.2)
+}
+
+li > button:focus{
+  outline: none;
+  color:  #201724;
+  background:#aec6cf; 
+  animation: pulse 3s infinite;
+}
+
+li > button:active{
+  color:  #201724;
+  background:#aec6cf; 
+  transform: scale(1.2)
+}

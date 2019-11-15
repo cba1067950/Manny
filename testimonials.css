@@ -1,0 +1,23 @@
+/* Testimonials */
+
+#frame{
+  height: 80vh;
+  width: 80vw;
+  background:rgb(0,0,0,0.9);
+  border-radius: 10px;
+}
+
+#card {
+  height: 80vh;
+  width: 80vw;
+  /* max-width: 100px; */
+}
+
+#img {
+  width: inherit;
+  border-radius: 10px;
+}
+
+p {
+  color: white;
+}

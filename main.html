@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <!-- <link rel="stylesheet" href="contact.css" /> -->
+  <!-- <link rel="stylesheet" href="estimate.css" /> -->
+  <!-- <link rel="stylesheet" href="testimonials.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Emanuele's Hands At Work</title>
   <script src="script.js" defer></script>
@@ -13,7 +17,8 @@
 </head>
 
 <body>
-  <div id="navbar">
+
+  <div id="Navbar">
     <ul>
       <li><button onClick="smoothScroll(event)">Home</button></li>
       <li><button onClick="smoothScroll(event)">Contact</button></li>
@@ -21,129 +26,24 @@
       <li><button onClick="smoothScroll(event)">Testimonials</button></li>
     </ul>
   </div>
-
-  <div id="main">
-    <div id="Home">
-      <div id="HomeAnchor"></div>
-      <video autoplay muted loop>
-        <source src="./images/TestVideo.mov" type="video/mp4" />
-      </video>
-    </div>
-
-    <div id="Contact">
-      <div id="ContactAnchor"></div>
-
-      <h1>Get in touch</h1>
-
-      <div id="contactInfo">
-        <div class="contactBox">
-          <h1><span class="fa fa-phone"></span></h1>
-          <h3>999 999 9999</h3>
-        </div>
-        <div class="contactBox">
-          <h1><span class="fa fa-envelope"></span></h1>
-          <h3>Manny@gmail.com</h3>
-        </div>
-
-
-      </div>
-
-
-      <div id="request">
-        <form id="requstForm" action="">
-          <label for="name">Name</label>
-          <input type="text" name="name">
-          <label for="phone">Phone Number</label>
-          <input type="text" name="phone">
-          <label for="message">Message</label>
-          <input type="textarea" name="body">
-          <input type="submit">
-        </form>
-      </div>
-    </div>
-
-    <div id="Estimate">
-      <div id="EstimateAnchor"></div>
-      <div id="inputBox">
-        <h2>Estimate</h2>
-        <form>
-          <!-- tub/shower/toilet/faucet/window/fan -->
-          <!-- lighting yes / no -->
-          <!-- floors, walls-->
-
-          <!-- <label for="roomCount">Number of Rooms</label> -->
-          <label for="Width">Width: 1</label>
-          <input id="Width" oninput="sliderChange(event)" type="range" name="width" value="1" min="1" max="50" />
-          <!-- <label for="Length">Length: 1</label>
-            <input id="Length" oninput="sliderChange(event)" type="range" name="length" value="1" min="1" max="50" /> -->
-          <label for="Height">Height: 1</label>
-          <input id="Height" oninput="sliderChange(event)" type="range" name="height" value="1" min="1" max="50" />
-        </form>
-
-        <div class="floor-select">
-          <select>
-            <option value="SelectFloor">Select Floor:</option>
-            <option value="Tile1">Tile 1</option>
-            <option value="Tile2">Tile 2</option>
-            <option value="Tile3">Tile 3</option>
-            <option value="Wood1">Wood 1</option>
-            <option value="Wood2">Wood 2</option>
-            <option value="Wood3">Wood 3</option>
-          </select>
-        </div>
-
-        <div class="trim-select">
-          <select>
-            <option value="TrimSelect">Select Trim:</option>
-            <option value="Trim1">Trim 1</option>
-            <option value="Trim2">Trim 2</option>
-            <option value="Trim3">Trim 3</option>
-          </select>
-        </div>
-
-        <label class="listello-check">Listello
-          <input type="checkbox" checked="unchecked">
-          <span class="checkmark"></span>
-        </label>
-
-        <div class="listello-select">
-          <select>
-            <option value="SelectListello">Select Listello:</option>
-            <option value="Listello1">Listello 1</option>
-            <option value="Listello2">Listello 2</option>
-            <option value="Listello3">Listello 3</option>
-          </select>
-        </div>
-
-        <label class="soapbox-check">Soapbox
-          <input type="checkbox" checked="unchecked">
-          <span class="checkmark"></span>
-        </label>
-
-
-      </div>
-      <div id="outputBox">
-        <h2>Sketch</h2>
-        <div id="areaOutput">Area: 1</div>
-        <!-- <div id="volume">Volume: 1</div> -->
-        <div id="areaBox"></div>
-      </div>
-    </div>
-
-    <div id="Testimonials">
-      <div id="TestimonialsAnchor"></div>
-
-      <div id="frame">
-        <div id="card">
-          <div id="left-btn"> left </div>
-          <img id="img" src="./images/20190918_084604.jpg" alt="">
-          <div id="right-btn"> right </div>
-        </div>
-        <p>This is pic 1</p>
-      </div>
+  <div id="Home"></div>
+  <div id="Contact">
+    <div id="Contact-Form">
 
     </div>
+    <div id="Contact-Info"></div>
   </div>
+  <div id="Estimate">
+    <div id="Estimate-Controls"></div>
+    <div id="Estimate-Sketch"></div>
+  </div>
+  <div id="Testimonials">
+    <div id="Frame">
+
+    </div>
+    <div id="Projects-Bar"></div>
+  </div>
+
 </body>
 
 </html>

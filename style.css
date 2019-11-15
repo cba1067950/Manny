@@ -1,3 +1,219 @@
+/* ****************** */
+/* GLOBAL */
+/* ****************** */
+
+/* Color picker */
+#Home {
+  background-color: #201724;
+}
+
+#Contact {
+  background-color: #C1CBC0;
+}
+
+#Contact-Form{
+  background-color: aqua;
+}
+
+#Contact-Info{
+  background-color: slateblue;
+}
+
+#Estimate {
+  background-color: #3D1322;
+}  
+
+#Estimate-Controls{
+  background-color: rgb(22, 182, 43);
+}
+
+#Estimate-Sketch{
+  background-color: rgb(173, 118, 138);
+}
+
+#Testimonials {
+  background-color: #C1CBC0;
+}
+
+#Frame{
+  background-color: black;
+}
+
+#Projects-Bar{
+  background-color: yellow;
+}
+
+/* Start globals */
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+header,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  padding: 5px;
+  margin: 0px;
+  font-size: 30pt;
+}
+
+h2{
+  font-size: 30pt;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80vh auto;
+  grid-template-areas: 
+    /* "nav" */
+    "home"
+    "cont"
+    "esti"
+    "test";
+  overflow: auto;
+}
+
+#Navbar {
+  grid-area: nav;
+}
+
+#Home{
+  grid-area: home;
+}
+
+#Contact{
+  grid-area: cont;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "a b";
+}
+
+#Contact-Form{
+  grid-area: a;
+}
+
+#Contact-Info{
+  grid-area: b;
+}
+
+#Estimate{
+  grid-area: esti;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "c d";
+}
+
+#Estimate-Controls{
+  grid-area: c;
+}
+
+#Estimate-Sketch{
+  grid-area: d;
+}
+
+#Testimonials{
+  grid-area: test;
+
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+    "f f f"  
+    "e e e";
+  }
+  
+#Frame{
+  /* height: 80%; */
+  grid-area: f;
+}
+
+#Projects-Bar{
+  /* height: 20%; */
+  grid-area: e;
+}
+
+
+
+
+
+
+
+/* ****************** */
+/* Body */
+/* ****************** */
+
+/* #Home, #Contact, #Estimate, #Testimonials {
+  position: relative;
+  text-align: center;
+  height: 99vh;
+} */
+
+/* ****************** */
+/* Home */
+/* ****************** */
+
+video {
+  align-content: left;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: inherit;
+}
+
+/* ****************** */
+/* Contact */
+/* ****************** */
+
+/* #contactInfo {
+  float: left;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+}
+
+.contactBox {
+  width: 25%;
+  height: 120px;
+  background: white;
+  border-radius: 15px;
+} */
+
+span {
+  display: inline-block;
+}
+
+/* ****************** */
+/* Estimate */
+/* ****************** */
+
+
+/* #inputBox {
+  float: left;
+  height: inherit;
+  width: 50%;
+}
+
+#outputBox {
+  float: right;
+  height: inherit;
+  text-align: center;
+  width: 50%;
+} */
+
 /* colors 
 yellow #BDB964
 light cherry #7C1C23
@@ -19,256 +235,3 @@ pink white
 off white 
 #C1CBC0
 */
-
-/* ****************** */
-/* GLOBAL */
-/* ****************** */
-#Home {
-  background-color: #201724;
-}
-
-#Contact {
-  background-color: #C1CBC0;
-}
-
-#Estimate {
-  background-color: #3D1322;
-}
-
-#inputBox{
-  background-color: #3D1322;
-}
-
-#outputBox{
-  background-color: #3D1322;
-}
-
-#Testimonials {
-  background-color: #C1CBC0;
-}
-
-
-html {
-  /* scroll-behavior: smooth; */
-  overflow: hidden;
-  height: 100%;
-}
-
-body,
-header,
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-h1 {
-  padding: 5px;
-  margin: 0px;
-  font-size: 30pt;
-}
-
-h2{
-  font-size: 30pt;
-}
-
-body {
-  height: 100%;
-  overflow: auto;
-}
-
-/* ****************** */
-/* Nav bar */
-/* ****************** */
-
-#navbar {
-  position: fixed;
-  background-color: #201724;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  z-index: 1;
-}
-
-ul {
-  padding: 20px;
-}
-
-li {
-  display: inline;
-  padding: 0px 10px;
-  text-decoration: none;
-}
-
-#HomeAnchor, #ContactAnchor, #EstimateAnchor, #TestimonialsAnchor {
-  position: absolute;
-  top: -56px;
-}
-
-/* ****************** */
-/* Body */
-/* ****************** */
-
-#Home, #Contact, #Estimate, #Testimonials {
-  position: relative;
-  text-align: center;
-  height: 100vh;
-}
-
-/* ****************** */
-/* Home */
-/* ****************** */
-
-video {
-  align-content: left;
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
-  height: inherit;
-}
-
-/* ****************** */
-/* Contact */
-/* ****************** */
-
-#contactInfo {
-  float: left;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-  width: 50%;
-}
-
-.contactBox {
-  width: 25%;
-  height: 120px;
-  /* margin: 10px; */
-  background: white;
-  border-radius: 15px;
-}
-
-span {
-  display: inline-block;
-}
-
-#request {
-  display: block;
-  float: right;
-  text-align: center;
-  width: 50%;
-  height: inherit;
-  margin: 0 auto;
-  /* padding: 20px; */
-  background: #f0e68c;
-}
-
-form {
-  text-align: center; 
-  width: 55vw;
-}
-
-@keyframes pulse {
-  0% {
-    transform: rotate(0deg);
-  }
-  20%{
-    transform: rotate(6deg);
-  }
-  50%{
-    transform: rotate(-6deg);
-  }
-  80%{
-    transform: rotate(0deg);
-  }
-}
-
-button {
-  width: 90px;
-  padding: 2px; 
-  font-size: 12px;
-  color: #aec6cf;
-  background: none; 
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-button:hover{ 
-  color:  #201724;
-  background:#aec6cf; 
-  transform: scale(1.2)
-}
-
-button:focus{
-  outline: none;
-  color:  #201724;
-  background:#aec6cf; 
-  animation: pulse 3s infinite;
-}
-
-button:active{
-  color:  #201724;
-  background:#aec6cf; 
-  transform: scale(1.2)
-}
-
-
-/* ****************** */
-/* Estimate */
-/* ****************** */
-
-/* This is the slider */
-input, label {
-  width: 60%; 
-  display: block;
-  /* justify-content: center; */
-}
-
-#inputBox {
-  float: left;
-  height: inherit;
-  width: 50%;
-}
-
-#outputBox {
-  float: right;
-  height: inherit;
-  text-align: center;
-  width: 50%;
-}
-
-#areaOutput {
-  font-size: 30px;
-  padding: 20px;
-}
-
-#areaBox {
-  border: solid 2px black;
-  width: 10px;
-  height: 10px;
-  margin: 0 auto;
-}
-
-/* Testimonials */
-
-#frame{
-  height: 84vh;
-  width: 80vw;
-  background:rgb(0,0,0,0.9);
-  border-radius: 10px;
-}
-
-#card {
-  height: 80vh;
-  width: 80vw;
-  /* max-width: 100px; */
-}
-
-#img {
-  width: inherit;
-  border-radius: 10px;
-}
-
-p {
-  color: white;
-}
